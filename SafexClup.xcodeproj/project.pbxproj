@@ -15,6 +15,9 @@
 		2D79392E27CFFE9F002352A5 /* Animations2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D79392D27CFFE9F002352A5 /* Animations2UITests.swift */; };
 		2D79393027CFFE9F002352A5 /* Animations2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D79392F27CFFE9F002352A5 /* Animations2UITestsLaunchTests.swift */; };
 		2DB08C0128ED88BA0047715C /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB08C0028ED88BA0047715C /* Color+Ext.swift */; };
+		2DB08C0328ED9D500047715C /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB08C0228ED9D500047715C /* LocationMapView.swift */; };
+		2DB08C0528ED9D670047715C /*  LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB08C0428ED9D670047715C /*  LocationListView.swift */; };
+		2DB08C0728ED9DB10047715C /*  ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB08C0628ED9DB10047715C /*  ProfileView.swift */; };
 		2DE40BD028ECE4220075CB71 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE40BCF28ECE4220075CB71 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		2D79392D27CFFE9F002352A5 /* Animations2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations2UITests.swift; sourceTree = "<group>"; };
 		2D79392F27CFFE9F002352A5 /* Animations2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2DB08C0028ED88BA0047715C /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		2DB08C0228ED9D500047715C /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
+		2DB08C0428ED9D670047715C /*  LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " LocationListView.swift"; sourceTree = "<group>"; };
+		2DB08C0628ED9DB10047715C /*  ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ProfileView.swift"; sourceTree = "<group>"; };
 		2DE40BCD28ECE3C40075CB71 /* SafexClup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafexClup.entitlements; sourceTree = "<group>"; };
 		2DE40BCF28ECE4220075CB71 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -148,6 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				2D79391427CFFE98002352A5 /* ContentView.swift */,
+				2DB08C0228ED9D500047715C /* LocationMapView.swift */,
+				2DB08C0428ED9D670047715C /*  LocationListView.swift */,
+				2DB08C0628ED9DB10047715C /*  ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +301,9 @@
 			files = (
 				2DB08C0128ED88BA0047715C /* Color+Ext.swift in Sources */,
 				2D79391527CFFE98002352A5 /* ContentView.swift in Sources */,
+				2DB08C0528ED9D670047715C /*  LocationListView.swift in Sources */,
+				2DB08C0728ED9DB10047715C /*  ProfileView.swift in Sources */,
+				2DB08C0328ED9D500047715C /* LocationMapView.swift in Sources */,
 				2D79391327CFFE98002352A5 /* SafexClupApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

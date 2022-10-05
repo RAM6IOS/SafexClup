@@ -10,9 +10,21 @@ import SwiftUI
 struct ContentView: View {
    
     var body: some View {
-        VStack {
-                 Text("SafexClup")
-    }
+        TabView{
+            LocationMapView()
+                .tabItem {
+                    Label("Map", systemImage: "map")
+                }
+            LocationListView()
+                .tabItem{
+                    Label("Locations" , systemImage: "building")
+                }
+            ProfileView()
+                .tabItem{
+                    Label("Profile" , systemImage: "person")
+                }
+        }
+        .accentColor(.essentialColor)
     }
 }
 
