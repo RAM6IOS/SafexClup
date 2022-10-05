@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Animations2App: App {
+struct SafexClupApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
