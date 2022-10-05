@@ -9,9 +9,39 @@ import SwiftUI
 
 struct LocationListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        NavigationView{
+            List{
+                ForEach(1..<10){ item in
+                    HStack{
+                    Image("SAFEX")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 80, height: 80)
+                        .clipShape(Circle())
+                        .padding(.vertical, 8)
+                    VStack(alignment: .leading ){
+                        Text("Test Location Name")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.75)
+                        HStack{
+                        ForEach(1..<5){ items in
+                            Image("default-avatar")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 35, height: 35)
+                                .clipShape(Circle())
+                        }
+                      }
+                    }
+                  }
+               }
+            }
+            .navigationTitle("Grub Spots")
+        }
+     }
+ }
 
 struct LocationListView_Previews: PreviewProvider {
     static var previews: some View {
