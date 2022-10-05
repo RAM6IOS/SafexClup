@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct LocationMapView: View {
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 36.733934,longitude: 3.148216),
+  span: MKCoordinateSpan(latitudeDelta:1, longitudeDelta: 1))
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Map(coordinateRegion: $region)
+                .ignoresSafeArea(edges: [.top])
+        }
     }
 }
 
