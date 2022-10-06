@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D38851D28EDF3B100073209 /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D38851C28EDF3B100073209 /* LocationDetail.swift */; };
 		2D79391327CFFE98002352A5 /* SafexClupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D79391227CFFE98002352A5 /* SafexClupApp.swift */; };
 		2D79391527CFFE98002352A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D79391427CFFE98002352A5 /* ContentView.swift */; };
 		2D79391727CFFE9D002352A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D79391627CFFE9D002352A5 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D38851C28EDF3B100073209 /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
 		2D79390F27CFFE98002352A5 /* SafexClup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafexClup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D79391227CFFE98002352A5 /* SafexClupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafexClupApp.swift; sourceTree = "<group>"; };
 		2D79391427CFFE98002352A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				2DB08C0228ED9D500047715C /* LocationMapView.swift */,
 				2DB08C0428ED9D670047715C /*  LocationListView.swift */,
 				2DB08C0628ED9DB10047715C /*  ProfileView.swift */,
+				2D38851C28EDF3B100073209 /* LocationDetail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				2DB08C0128ED88BA0047715C /* Color+Ext.swift in Sources */,
 				2D79391527CFFE98002352A5 /* ContentView.swift in Sources */,
 				2DB08C0528ED9D670047715C /*  LocationListView.swift in Sources */,
+				2D38851D28EDF3B100073209 /* LocationDetail.swift in Sources */,
 				2DB08C0728ED9DB10047715C /*  ProfileView.swift in Sources */,
 				2DB08C0328ED9D500047715C /* LocationMapView.swift in Sources */,
 				2D79391327CFFE98002352A5 /* SafexClupApp.swift in Sources */,
