@@ -14,7 +14,6 @@ struct LocationDetail: View {
             
         ]
     var body: some View {
-        NavigationView{
             VStack(spacing: 16){
                 Image("chipotle-banner")
                     .resizable()
@@ -27,20 +26,18 @@ struct LocationDetail: View {
                     Spacer()
                 }
                 .padding(.horizontal)
-               
+                
                 Text("It s Chipotle . Enough said")
                     .font(
-                            .title3
+                        .title3
                             .weight(.semibold)
-                        )
+                    )
                     .padding(.horizontal)
-               
-                    
 
-                    ZStack{
-                        Capsule()
-                            .frame(height: 80)
-                            .foregroundColor(Color(.secondarySystemBackground))
+                ZStack{
+                    Capsule()
+                        .frame(height: 80)
+                        .foregroundColor(Color(.secondarySystemBackground))
                     HStack( spacing: 20){
                         Button{
                             
@@ -50,7 +47,7 @@ struct LocationDetail: View {
                                 .font(.system(size: 30))
                                 .background(Color.essentialColor)
                                 .foregroundColor(.white)
-                               .clipShape(Circle())
+                                .clipShape(Circle())
                         }
                         Button{
                             
@@ -60,7 +57,7 @@ struct LocationDetail: View {
                                 .font(.system(size: 30))
                                 .background(Color.essentialColor)
                                 .foregroundColor(.white)
-                               .clipShape(Circle())
+                                .clipShape(Circle())
                         }
                         Button{
                             
@@ -70,7 +67,7 @@ struct LocationDetail: View {
                                 .font(.system(size: 30))
                                 .background(Color.essentialColor)
                                 .foregroundColor(.white)
-                               .clipShape(Circle())
+                                .clipShape(Circle())
                         }
                         Button{
                         }label: {
@@ -79,56 +76,52 @@ struct LocationDetail: View {
                                 .font(.system(size: 23))
                                 .background(Color.subColor)
                                 .foregroundColor(.white)
-                               .clipShape(Circle())
+                                .clipShape(Circle())
                         }
                     }
                     .padding(.vertical)
-                    }
-                  
-                    Text("Who s Here?")
-                        .font(
-                                .title2
-                                .weight(.bold)
-                            )
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(1..<8){ items in
-                            VStack{
+                }
+                
+                Text("Who s Here?")
+                    .font(
+                        .title2
+                            .weight(.bold)
+                    )
+                ScrollView{
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(1..<8){ items in
+                        VStack{
                             
                             Image("default-avatar")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 70, height: 70)
                                 .clipShape(Circle())
-                                Text("Name")
-                                    .bold()
-                                    .lineLimit(1)
-                                    .minimumScaleFactor(0.75)
-                            }
-
+                            Text("Name")
+                                .bold()
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.75)
                         }
                     }
-
-                   Spacer()
-                
+                }
+                }
             }
             .navigationTitle("chipotle")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(
-                                trailing:
-                                Button{
-                                    
-                                } label: {
-                                    Text("Dismiss")
-                                }
-                            )
-           
-        }
-     
+                trailing:
+                    Button{
+                    } label: {
+                        Text("Dismiss")
+                    }
+            )
     }
 }
 
 struct LocationDetail_Previews: PreviewProvider {
     static var previews: some View {
+        NavigationView{
         LocationDetail()
+        }
     }
 }
