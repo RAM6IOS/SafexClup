@@ -11,6 +11,7 @@
 		2D4963A828F0954C003E90BD /*  LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4963A728F0954C003E90BD /*  LocationCell.swift */; };
 		2D4963AA28F09710003E90BD /* LocationActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4963A928F09710003E90BD /* LocationActionButton.swift */; };
 		2D4963AC28F09FB0003E90BD /*  FirstNameAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4963AB28F09FB0003E90BD /*  FirstNameAvatarView.swift */; };
+		2D4963AE28F0A11C003E90BD /* BannerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4963AD28F0A11C003E90BD /* BannerImageView.swift */; };
 		2D79391327CFFE98002352A5 /* SafexClupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D79391227CFFE98002352A5 /* SafexClupApp.swift */; };
 		2D79391527CFFE98002352A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D79391427CFFE98002352A5 /* ContentView.swift */; };
 		2D79391727CFFE9D002352A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D79391627CFFE9D002352A5 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		2D4963A728F0954C003E90BD /*  LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " LocationCell.swift"; sourceTree = "<group>"; };
 		2D4963A928F09710003E90BD /* LocationActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationActionButton.swift; sourceTree = "<group>"; };
 		2D4963AB28F09FB0003E90BD /*  FirstNameAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " FirstNameAvatarView.swift"; sourceTree = "<group>"; };
+		2D4963AD28F0A11C003E90BD /* BannerImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerImageView.swift; sourceTree = "<group>"; };
 		2D79390F27CFFE98002352A5 /* SafexClup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafexClup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D79391227CFFE98002352A5 /* SafexClupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafexClupApp.swift; sourceTree = "<group>"; };
 		2D79391427CFFE98002352A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				2D4963A728F0954C003E90BD /*  LocationCell.swift */,
 				2D4963A928F09710003E90BD /* LocationActionButton.swift */,
 				2D4963AB28F09FB0003E90BD /*  FirstNameAvatarView.swift */,
+				2D4963AD28F0A11C003E90BD /* BannerImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				2D79391327CFFE98002352A5 /* SafexClupApp.swift in Sources */,
 				2D4963AA28F09710003E90BD /* LocationActionButton.swift in Sources */,
 				2D4963A828F0954C003E90BD /*  LocationCell.swift in Sources */,
+				2D4963AE28F0A11C003E90BD /* BannerImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,10 +14,7 @@ struct LocationDetail: View {
         ]
     var body: some View {
             VStack(spacing: 16){
-                Image("chipotle-banner")
-                    .resizable()
-                    .scaledToFit()
-                    .frame( height: 120)
+                BannerImageView(imageName:"chipotle-banner")
                 HStack{
                     Label("123 Main Street", systemImage: "mappin.and.ellipse")
                         .font(.caption)
