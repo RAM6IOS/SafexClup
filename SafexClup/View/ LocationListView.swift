@@ -13,30 +13,7 @@ struct LocationListView: View {
             List{
                 ForEach(1..<10){ item in
                     NavigationLink(destination: LocationDetail()) {
-                        HStack{
-                        Image("SAFEX")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 80, height: 80)
-                            .clipShape(Circle())
-                            .padding(.vertical, 8)
-                        VStack(alignment: .leading ){
-                            Text("Test Location Name")
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                                .lineLimit(1)
-                                .minimumScaleFactor(0.75)
-                            HStack{
-                            ForEach(1..<5){ items in
-                                Image("default-avatar")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 35, height: 35)
-                                    .clipShape(Circle())
-                            }
-                          }
-                        }
-                      }
+                       LocationCell()
                     }
                }
             }
