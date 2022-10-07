@@ -42,41 +42,21 @@ struct LocationDetail: View {
                         Button{
                             
                         }label: {
-                            Image(systemName: "location.fill")
-                                .frame(width: 60, height: 60)
-                                .font(.system(size: 30))
-                                .background(Color.essentialColor)
-                                .foregroundColor(.white)
-                                .clipShape(Circle())
+                            LocationActionButton(color:.essentialColor, imageName: "location.fill")
                         }
                         Button{
                             
                         }label: {
-                            Image(systemName: "network")
-                                .frame(width: 60, height: 60)
-                                .font(.system(size: 30))
-                                .background(Color.essentialColor)
-                                .foregroundColor(.white)
-                                .clipShape(Circle())
+                            LocationActionButton(color:.essentialColor, imageName: "network")
                         }
                         Button{
                             
                         }label: {
-                            Image(systemName: "phone.fill")
-                                .frame(width: 60, height: 60)
-                                .font(.system(size: 30))
-                                .background(Color.essentialColor)
-                                .foregroundColor(.white)
-                                .clipShape(Circle())
+                            LocationActionButton(color:.essentialColor, imageName: "phone.fill")
                         }
                         Button{
                         }label: {
-                            Image(systemName: "person.fill.checkmark")
-                                .frame(width: 60, height: 60)
-                                .font(.system(size: 23))
-                                .background(Color.subColor)
-                                .foregroundColor(.white)
-                                .clipShape(Circle())
+                            LocationActionButton(color:.subColor, imageName: "person.fill.checkmark")
                         }
                     }
                     .padding(.vertical)
