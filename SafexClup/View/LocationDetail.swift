@@ -11,7 +11,6 @@ struct LocationDetail: View {
             GridItem(.flexible()),
             GridItem(.flexible()),
             GridItem(.flexible())
-            
         ]
     var body: some View {
             VStack(spacing: 16){
@@ -26,14 +25,12 @@ struct LocationDetail: View {
                     Spacer()
                 }
                 .padding(.horizontal)
-                
                 Text("It s Chipotle . Enough said")
                     .font(
                         .title3
-                            .weight(.semibold)
+                        .weight(.semibold)
                     )
                     .padding(.horizontal)
-
                 ZStack{
                     Capsule()
                         .frame(height: 80)
@@ -61,7 +58,6 @@ struct LocationDetail: View {
                     }
                     .padding(.vertical)
                 }
-                
                 Text("Who s Here?")
                     .font(
                         .title2
@@ -70,18 +66,7 @@ struct LocationDetail: View {
                 ScrollView{
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(1..<8){ items in
-                        VStack{
-                            
-                            Image("default-avatar")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 70, height: 70)
-                                .clipShape(Circle())
-                            Text("Name")
-                                .bold()
-                                .lineLimit(1)
-                                .minimumScaleFactor(0.75)
-                        }
+                        FirstNameAvatarView(firstName: "Name")
                     }
                 }
                 }
