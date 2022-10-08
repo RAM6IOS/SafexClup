@@ -12,17 +12,19 @@ struct LocationDetail: View {
             GridItem(.flexible()),
             GridItem(.flexible())
         ]
+    var location: LocationModel
+    
     var body: some View {
             VStack(spacing: 16){
                 BannerImageView(imageName:"chipotle-banner")
                 HStack{
-                    Label("123 Main Street", systemImage: "mappin.and.ellipse")
+                    Label(location.address, systemImage: "mappin.and.ellipse")
                         .font(.caption)
                         .foregroundColor(.secondary)
                     Spacer()
                 }
                 .padding(.horizontal)
-                Text("It s Chipotle . Enough said")
+                Text(location.description)
                     .font(
                         .title3
                         .weight(.semibold)
@@ -38,11 +40,9 @@ struct LocationDetail: View {
                         }label: {
                             LocationActionButton(color:.essentialColor, imageName: "location.fill")
                         }
-                        Button{
-                            
-                        }label: {
+                        Link(destination: URL(string: location.websiteURL)!, label: {
                             LocationActionButton(color:.essentialColor, imageName: "network")
-                        }
+                        })
                         Button{
                             
                         }label: {
@@ -68,7 +68,7 @@ struct LocationDetail: View {
                 }
                 }
             }
-            .navigationTitle("chipotle")
+            .navigationTitle(location.name)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(
                 trailing:
@@ -83,7 +83,7 @@ struct LocationDetail: View {
 struct LocationDetail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-        LocationDetail()
+        LocationDetail(location: LocationModel(record: MockData.location))
         }
     }
 }
