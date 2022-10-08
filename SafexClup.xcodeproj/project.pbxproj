@@ -19,6 +19,7 @@
 		2D79392427CFFE9E002352A5 /* Animations2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D79392327CFFE9E002352A5 /* Animations2Tests.swift */; };
 		2D79392E27CFFE9F002352A5 /* Animations2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D79392D27CFFE9F002352A5 /* Animations2UITests.swift */; };
 		2D79393027CFFE9F002352A5 /* Animations2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D79392F27CFFE9F002352A5 /* Animations2UITestsLaunchTests.swift */; };
+		2D898D4B28F1FDCF00FB9E00 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D898D4A28F1FDCF00FB9E00 /* LocationModel.swift */; };
 		2DB08C0128ED88BA0047715C /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB08C0028ED88BA0047715C /* Color+Ext.swift */; };
 		2DB08C0328ED9D500047715C /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB08C0228ED9D500047715C /* LocationMapView.swift */; };
 		2DB08C0528ED9D670047715C /*  LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB08C0428ED9D670047715C /*  LocationListView.swift */; };
@@ -59,6 +60,7 @@
 		2D79392927CFFE9F002352A5 /* SafexClupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafexClupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D79392D27CFFE9F002352A5 /* Animations2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations2UITests.swift; sourceTree = "<group>"; };
 		2D79392F27CFFE9F002352A5 /* Animations2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2D898D4A28F1FDCF00FB9E00 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		2DB08C0028ED88BA0047715C /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		2DB08C0228ED9D500047715C /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
 		2DB08C0428ED9D670047715C /*  LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " LocationListView.swift"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		2D79391127CFFE98002352A5 /* SafexClup */ = {
 			isa = PBXGroup;
 			children = (
+				2D898D4928F1FD9E00FB9E00 /* Model */,
 				2DB08BFF28ED88920047715C /* View */,
 				2DB08BFE28ED88800047715C /* Extension */,
 				2DE40BCD28ECE3C40075CB71 /* SafexClup.entitlements */,
@@ -150,6 +153,14 @@
 				2D79392F27CFFE9F002352A5 /* Animations2UITestsLaunchTests.swift */,
 			);
 			path = SafexClupUITests;
+			sourceTree = "<group>";
+		};
+		2D898D4928F1FD9E00FB9E00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D898D4A28F1FDCF00FB9E00 /* LocationModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2DB08BFE28ED88800047715C /* Extension */ = {
@@ -318,6 +329,7 @@
 				2D79391527CFFE98002352A5 /* ContentView.swift in Sources */,
 				2D4963AC28F09FB0003E90BD /*  FirstNameAvatarView.swift in Sources */,
 				2DB08C0528ED9D670047715C /*  LocationListView.swift in Sources */,
+				2D898D4B28F1FDCF00FB9E00 /* LocationModel.swift in Sources */,
 				2D38851D28EDF3B100073209 /* LocationDetail.swift in Sources */,
 				2DB08C0728ED9DB10047715C /*  ProfileView.swift in Sources */,
 				2DB08C0328ED9D500047715C /* LocationMapView.swift in Sources */,
