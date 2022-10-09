@@ -16,6 +16,16 @@ struct LocationMapView: View {
             Map(coordinateRegion: $region)
                 .ignoresSafeArea(edges: [.top])
         }
+        .onAppear {
+            CloudKitManager.getLocations { result in
+                switch result {
+                    case .success(let locations):
+                        print(locations)
+                    case .failure(let error):
+                        print(error)
+                }
+            }
+        }
     }
 }
 
