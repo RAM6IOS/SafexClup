@@ -9,13 +9,10 @@ import SwiftUI
 import MapKit
 
 struct LocationMapView: View {
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 36.733934,longitude: 3.148216),
-  span: MKCoordinateSpan(latitudeDelta:1, longitudeDelta: 1))
-    @State private var alertItem: AlertItem?
-    @State var didError = false
+    @StateObject private var viewModel = LocationMapViewModel()
     var body: some View {
         ZStack{
-            Map(coordinateRegion: $region)
+            Map(coordinateRegion: $viewModel.region)
                 .ignoresSafeArea(edges: [.top])
         }
         //MARK: - If you need to support iOS 14 and 13
@@ -23,24 +20,16 @@ struct LocationMapView: View {
          //  Alert(title: Text(alertItem.title), message: alertItem.message, dismissButton: alertItem.dismissButton)
         //})
         .alert(
-            alertItem?.title ?? "title", isPresented: $didError) {
+            viewModel.alertItem?.title ?? "title", isPresented: $viewModel.didError) {
                     Button{
-                        didError = false
+                        viewModel.didError = false
                     } label: {
                       Text("Ok") }
                 } message: {
-                    alertItem?.message
+                    viewModel.alertItem?.message
                 }
         .onAppear {
-            CloudKitManager.getLocations { result in
-                switch result {
-                    case .success(let locations):
-                        print(locations)
-                    case .failure(_):
-           alertItem = AlertContext.unableToGetLocations
-                    didError = true
-                }
-            }
+            viewModel.getLocations()
         }
     }
 }
