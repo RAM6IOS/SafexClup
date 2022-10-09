@@ -13,7 +13,7 @@ struct CloudKitManager {
     
     static func getLocations(completed: @escaping (Result<[LocationModel], Error>) -> Void) {
         let sortDescriptor = NSSortDescriptor(key: LocationModel.kName, ascending: true)
-        let query = CKQuery(recordType: "LocationModel", predicate: NSPredicate(value: true))
+        let query = CKQuery(recordType: "Location", predicate: NSPredicate(value: true))
         query.sortDescriptors = [sortDescriptor]
         
         CKContainer.default().publicCloudDatabase.perform(query, inZoneWith: nil) { records, error in
