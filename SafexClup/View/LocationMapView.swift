@@ -15,6 +15,9 @@ struct LocationMapView: View {
         ZStack{
             Map(coordinateRegion: $viewModel.region)
                 .ignoresSafeArea(edges: [.top])
+            Map(coordinateRegion: $viewModel.region, annotationItems: locationManager.loactions) { location in
+                MapMarker(coordinate: location.location.coordinate, tint: Color.essentialColor)
+            }
         }
         //MARK: - If you need to support iOS 14 and 13
         //.alert(item: $viewModel.alertItem, content: { alertItem in
