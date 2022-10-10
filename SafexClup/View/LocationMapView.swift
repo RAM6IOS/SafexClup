@@ -16,18 +16,10 @@ struct LocationMapView: View {
                 .ignoresSafeArea(edges: [.top])
         }
         //MARK: - If you need to support iOS 14 and 13
-        //.alert(item: $alertItem, content: { alertItem in
-         //  Alert(title: Text(alertItem.title), message: alertItem.message, dismissButton: alertItem.dismissButton)
+        //.alert(item: $viewModel.alertItem, content: { alertItem in
+          // Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
         //})
-        .alert(
-            viewModel.alertItem?.title ?? "title", isPresented: $viewModel.didError) {
-                    Button{
-                        viewModel.didError = false
-                    } label: {
-                      Text("Ok") }
-                } message: {
-                    viewModel.alertItem?.message
-                }
+        
         .onAppear {
             viewModel.getLocations()
         }

@@ -30,6 +30,7 @@
 		2DB08C0328ED9D500047715C /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB08C0228ED9D500047715C /* LocationMapView.swift */; };
 		2DB08C0528ED9D670047715C /*  LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB08C0428ED9D670047715C /*  LocationListView.swift */; };
 		2DB08C0728ED9DB10047715C /*  ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB08C0628ED9DB10047715C /*  ProfileView.swift */; };
+		2DD9DED828F41AC1009C5CAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9DED728F41AC1009C5CAE /* Constants.swift */; };
 		2DE40BD028ECE4220075CB71 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE40BCF28ECE4220075CB71 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		2DB08C0228ED9D500047715C /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
 		2DB08C0428ED9D670047715C /*  LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " LocationListView.swift"; sourceTree = "<group>"; };
 		2DB08C0628ED9DB10047715C /*  ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ProfileView.swift"; sourceTree = "<group>"; };
+		2DD9DED728F41AC1009C5CAE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2DE40BCD28ECE3C40075CB71 /* SafexClup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafexClup.entitlements; sourceTree = "<group>"; };
 		2DE40BCF28ECE4220075CB71 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -193,6 +195,7 @@
 			children = (
 				2DB08C0028ED88BA0047715C /* Color+Ext.swift */,
 				2D8640BD28F2DA90004C2E04 /* CKRecord.swift */,
+				2DD9DED728F41AC1009C5CAE /* Constants.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D898D4D28F2050B00FB9E00 /* ProfileModel.swift in Sources */,
+				2DD9DED828F41AC1009C5CAE /* Constants.swift in Sources */,
 				2DB08C0128ED88BA0047715C /* Color+Ext.swift in Sources */,
 				2D79391527CFFE98002352A5 /* ContentView.swift in Sources */,
 				2D898D4F28F205D600FB9E00 /* MockData.swift in Sources */,
