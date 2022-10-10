@@ -10,6 +10,7 @@ import MapKit
 
 struct LocationMapView: View {
     @StateObject private var viewModel = LocationMapViewModel()
+    @EnvironmentObject private var locationManager : LocationManager
     var body: some View {
         ZStack{
             Map(coordinateRegion: $viewModel.region)

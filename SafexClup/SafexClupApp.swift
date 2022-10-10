@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SafexClupApp: App {
+    let locationManager = LocationManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(locationManager)
         }
     }
 }

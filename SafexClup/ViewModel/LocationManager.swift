@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class LocationManager : ObservableObject {
+    @Published var loaction : [LocationModel] = []
+}
