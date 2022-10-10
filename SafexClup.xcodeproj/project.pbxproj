@@ -31,6 +31,7 @@
 		2DB08C0528ED9D670047715C /*  LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB08C0428ED9D670047715C /*  LocationListView.swift */; };
 		2DB08C0728ED9DB10047715C /*  ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB08C0628ED9DB10047715C /*  ProfileView.swift */; };
 		2DD9DED828F41AC1009C5CAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9DED728F41AC1009C5CAE /* Constants.swift */; };
+		2DD9DEDA28F43434009C5CAE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9DED928F43434009C5CAE /* LocationManager.swift */; };
 		2DE40BD028ECE4220075CB71 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE40BCF28ECE4220075CB71 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		2DB08C0428ED9D670047715C /*  LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " LocationListView.swift"; sourceTree = "<group>"; };
 		2DB08C0628ED9DB10047715C /*  ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ProfileView.swift"; sourceTree = "<group>"; };
 		2DD9DED728F41AC1009C5CAE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2DD9DED928F43434009C5CAE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2DE40BCD28ECE3C40075CB71 /* SafexClup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafexClup.entitlements; sourceTree = "<group>"; };
 		2DE40BCF28ECE4220075CB71 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -175,6 +177,7 @@
 			children = (
 				2D8640BB28F2D978004C2E04 /* CloudKitManager.swift */,
 				2D9F90A428F33DE700323C28 /* LocationMapViewModel.swift */,
+				2DD9DED928F43434009C5CAE /* LocationManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				2D38851D28EDF3B100073209 /* LocationDetail.swift in Sources */,
 				2DB08C0728ED9DB10047715C /*  ProfileView.swift in Sources */,
 				2D9F90A528F33DE700323C28 /* LocationMapViewModel.swift in Sources */,
+				2DD9DEDA28F43434009C5CAE /* LocationManager.swift in Sources */,
 				2DB08C0328ED9D500047715C /* LocationMapView.swift in Sources */,
 				2D79391327CFFE98002352A5 /* SafexClupApp.swift in Sources */,
 				2D8640C228F2F0E9004C2E04 /* AlertItem.swift in Sources */,
