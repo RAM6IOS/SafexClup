@@ -14,15 +14,17 @@ final class LocationMapViewModel: ObservableObject {
     @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 36.733934,longitude: 3.148216),
                                                span: MKCoordinateSpan(latitudeDelta:1, longitudeDelta: 1))
     
-    @Published var locations: [LocationModel] = []
+   
     
-    func getLocations() {
+    func getLocations(for locationManager: LocationManager) {
         CloudKitManager.getLocations { [self] result in
-            switch result {
-                case .success(let locations):
-                    self.locations = locations
-                case .failure(_):
-                    alertItem = AlertContext.unableToGetLocations
+            DispatchQueue.main.async {
+                switch result {
+                    case .success(let locations):
+                    locationManager.loactions = locations
+                    case .failure(_):
+                        alertItem = AlertContext.unableToGetLocations
+                }
             }
         }
     }
