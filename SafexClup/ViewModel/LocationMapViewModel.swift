@@ -12,7 +12,7 @@ final class LocationMapViewModel: ObservableObject {
     
     @Published var alertItem: AlertItem?
     @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 36.733934,longitude: 3.148216),
-                                               span: MKCoordinateSpan(latitudeDelta:1, longitudeDelta: 1))
+                                               span: MKCoordinateSpan(latitudeDelta:0.2, longitudeDelta: 0.2))
     
    
     
