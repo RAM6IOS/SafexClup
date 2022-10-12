@@ -11,13 +11,18 @@ import MapKit
 struct LocationMapView: View {
     @StateObject private var viewModel = LocationMapViewModel()
     @EnvironmentObject private var locationManager : LocationManager
+    let locations = [
+        Location(name: "Buckingham Palace", coordinate: CLLocationCoordinate2D(latitude: 36.713934, longitude: 3.148216)),
+        Location(name: "Tower of London", coordinate: CLLocationCoordinate2D(latitude:36.733934, longitude: 3.148216))
+    ]
     var body: some View {
         ZStack{
-            Map(coordinateRegion: $viewModel.region)
-                .ignoresSafeArea(edges: [.top])
-            Map(coordinateRegion: $viewModel.region, annotationItems: locationManager.loactions) { location in
-                MapMarker(coordinate: location.location.coordinate, tint: Color.essentialColor)
+           // Map(coordinateRegion: $viewModel.region)
+               
+            Map(coordinateRegion: $viewModel.region, annotationItems: locations) { location in
+                MapMarker(coordinate: location.coordinate , tint: Color.essentialColor)
             }
+            .ignoresSafeArea(edges: [.top])
         }
         //MARK: - If you need to support iOS 14 and 13
         //.alert(item: $viewModel.alertItem, content: { alertItem in
