@@ -19,19 +19,21 @@ struct LocationMapView: View {
         ZStack{
            // Map(coordinateRegion: $viewModel.region)
                
-            Map(coordinateRegion: $viewModel.region, annotationItems: locations) { location in
+            Map(coordinateRegion: $viewModel.region, showsUserLocation: true, annotationItems: locations) { location in
                 MapMarker(coordinate: location.coordinate , tint: Color.essentialColor)
             }
             .ignoresSafeArea(edges: [.top])
         }
         //MARK: - If you need to support iOS 14 and 13
-        //.alert(item: $viewModel.alertItem, content: { alertItem in
-          // Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
-        //})
+        .alert(item: $viewModel.alertItem, content: { alertItem in
+           Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
+        })
         .onAppear {
-            if locationManager.loactions.isEmpty {
-            viewModel.getLocations(for: locationManager)
-            }
+            //viewModel.checkIfLocationServicesIsEnabled()
+            //if locationManager.loactions.isEmpty {
+           // viewModel.getLocations(for: locationManager)
+           // }
+            viewModel.checkIfLocationServicesIsEnabled()
         }
     }
 }
