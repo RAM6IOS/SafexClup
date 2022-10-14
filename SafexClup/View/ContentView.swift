@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-   
+    @AppStorage("ShowHome") var ShowHome : Bool = true
     var body: some View {
         TabView{
+            if ShowHome {
+                Onboarding(ShowHome: $ShowHome)
+            } else{
             LocationMapView()
                 .tabItem {
                     Label("Map", systemImage: "map")
@@ -23,6 +26,7 @@ struct ContentView: View {
                 .tabItem{
                     Label("Profile" , systemImage: "person")
                 }
+            }
         }
         .accentColor(.essentialColor)
     }

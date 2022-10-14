@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D36007528F9C8770038C8BA /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36007428F9C8770038C8BA /* Onboarding.swift */; };
+		2D36007728F9C9930038C8BA /* OnboardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36007628F9C9930038C8BA /* OnboardInfoView.swift */; };
 		2D38851D28EDF3B100073209 /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D38851C28EDF3B100073209 /* LocationDetail.swift */; };
 		2D4963A828F0954C003E90BD /*  LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4963A728F0954C003E90BD /*  LocationCell.swift */; };
 		2D4963AA28F09710003E90BD /* LocationActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4963A928F09710003E90BD /* LocationActionButton.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D36007428F9C8770038C8BA /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		2D36007628F9C9930038C8BA /* OnboardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardInfoView.swift; sourceTree = "<group>"; };
 		2D38851C28EDF3B100073209 /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
 		2D4963A728F0954C003E90BD /*  LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " LocationCell.swift"; sourceTree = "<group>"; };
 		2D4963A928F09710003E90BD /* LocationActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationActionButton.swift; sourceTree = "<group>"; };
@@ -215,6 +219,8 @@
 				2D4963A928F09710003E90BD /* LocationActionButton.swift */,
 				2D4963AB28F09FB0003E90BD /*  FirstNameAvatarView.swift */,
 				2D4963AD28F0A11C003E90BD /* BannerImageView.swift */,
+				2D36007428F9C8770038C8BA /* Onboarding.swift */,
+				2D36007628F9C9930038C8BA /* OnboardInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -360,8 +366,10 @@
 				2D898D4D28F2050B00FB9E00 /* ProfileModel.swift in Sources */,
 				2DD9DED828F41AC1009C5CAE /* Constants.swift in Sources */,
 				2DB08C0128ED88BA0047715C /* Color+Ext.swift in Sources */,
+				2D36007528F9C8770038C8BA /* Onboarding.swift in Sources */,
 				2D79391527CFFE98002352A5 /* ContentView.swift in Sources */,
 				2D898D4F28F205D600FB9E00 /* MockData.swift in Sources */,
+				2D36007728F9C9930038C8BA /* OnboardInfoView.swift in Sources */,
 				2D4963AC28F09FB0003E90BD /*  FirstNameAvatarView.swift in Sources */,
 				2DB08C0528ED9D670047715C /*  LocationListView.swift in Sources */,
 				2D8640BE28F2DA90004C2E04 /* CKRecord.swift in Sources */,
